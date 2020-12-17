@@ -1,0 +1,288 @@
+/*+++++++general+++++++*/
+
+@font-face {
+    font-family: "iransans";
+    src: url("../webfont/IRANSans_Medium.woff2") format("woff2");
+}
+
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
+acronym, address, big, cite, code, del, dfn, em,
+font, img, ins, kbd, q, s, samp, small, strike,
+strong, sub, sub, tt, var, b, u, i, center, dl,
+dt, dd, ol, ul, li, fieldset, form, label,
+legend, table, caption, tbody, tfoot, thead, tr, th, td,  */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    /* border: 0px; */
+    outline: 0px;
+    text-decoration: none;
+    list-style-type: none;
+    direction: rtl;
+}
+
+/* html {
+    scroll-behavior: smooth;
+} */
+
+body {
+    font-family: iransans;
+}
+
+a {
+    color: white;
+}
+
+/*+++++++navbar+++++++*/
+
+nav {
+    position: fixed;
+    width: 100%;
+   background: linear-gradient(90deg, rgba(20,171,210,1) 0%, rgba(124,26,209,1) 70%);
+ }
+
+nav > ul > li i {
+margin-left: 10px;
+ }
+
+nav > ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav > ul > li {
+    display: inline-block;
+    color: white;
+    transition: 0.5s;
+    margin: 0px;
+    padding: 20px 20px;
+}
+
+nav > ul > li:hover {
+    background: #bf1363;
+
+}
+
+
+nav > ul > li > a {
+    font-size: 24px;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+:-webkit-any(article,aside,nav,section) h1 {
+    font-size: 1.5em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+/*+++++++brand++++++++*/
+
+.brand > h1 {
+    display: inline-block;
+    font-weight: lighter;
+    margin: 0;
+    padding: 0;
+}
+
+.brand {
+    display: inline-block;
+    color: white;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.brand:hover {
+    color: white;
+    background-color: darkorchid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*+++++++dropdown++++++++*/
+
+.dropdown_link {
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    right: -1px;
+    top: 78px;
+    background-color: #ded9e2;
+    border-radius: 0px 0px 10px 10px;
+    /* box-shadow: 5px 5px 3px grey; */
+    width: 200px;
+    display: none;
+}
+
+.dropdown_link:hover > .dropdown {
+    display: block;
+}
+
+.dropdown > ul {
+    text-align: center;
+    padding: 0px;
+    display: block;
+}
+
+.dropdown > ul > li.border {
+    border-bottom: 1px solid black;
+    display: block;
+}
+
+
+.dropdown > ul > li > a:hover {
+    background-color: #0f8b8d;
+    color: white;
+    display: block;
+    border-radius: 5px;
+}
+
+.dropdown > ul > li > a {
+    color: black;
+    text-align: center;
+    padding: 10px;
+    display: block;
+}
+
+/*+++++++header++++++++*/
+
+header > .img > img {
+    display: inline-block;
+    width: 40%;
+}
+
+header {
+    text-align: center;
+    display: inline-block;
+}
+
+
+header > .intro {
+    display: inline-block;
+    background: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);
+    width: 100%;
+    padding: 150px 0px;
+    color: white;
+    text-align: center;
+}
+header > .intro > h2 {
+    font-weight: lighter;
+}
+
+header > div > p {
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/*+++++++section++++++++*/
+
+
+section {
+    text-align: center;
+}
+
+section.form {
+    background-color:#0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    display: inline-block;
+    padding: 150px 0px;
+    width: 100%;
+}
+
+/*+++++++signup++++++++*/
+
+.form > .signup > fieldset > div {
+    display: inline-block;
+}
+
+.form > .signup > fieldset > div > label {
+    display: block;
+    padding: 10px 0px;
+    color: aliceblue;
+}
+
+.signup > fieldset > .formgroup > input {
+    margin-left: 30px;
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 10px 15px;
+    border: 0;
+}
+
+.signup > fieldset {
+    border-color: aqua;
+    padding: 60px 0px;
+    margin:  0px 50px;
+    border-width: medium;
+    border-style: solid;
+
+}
+
+form.signup > div.formgroup {
+    display: inline-block;
+}
+
+.signup > fieldset > legend {
+    padding: 0px 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.signup > fieldset > .formgroup > label i {
+    margin-left: 5px;
+    font-size: 25px;
+    color: snow;
+}
+
+.signup > fieldset > .formgroup > label {
+    font-size: 20px;
+}
+
+
+
+/*+++++++footer++++++++*/
+
+footer {
+    padding: 80px 0px;
+    background: #662e9b;
+    text-align: center;
+    color:  white;
+    position: relative;
+}
+
+footer > div {
+    display: inline-block;
+}
+
+footer > .police {
+    margin-top: 30px;
+    margin-right: 200px;;
+}
+
+footer > .police > p {
+    font-weight: lighter;
+    color: white;
+    font-size: 15px;
+}
+
+footer > .icon > a > i {
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+footer > .icon {
+    float: left;
+    margin-left: 20px;
+    margin-top: 30px;
+}
